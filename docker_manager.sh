@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 function clean_all_containers() {
   docker stop $(docker ps -q)
+  docker rm $(docker ps -aq)
   docker image rmi $(docker images -q) -f
   docker volume prune -f
   docker system prune -f
