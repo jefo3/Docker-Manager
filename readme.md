@@ -10,3 +10,4 @@ Then just run it:
 ```bash
 ./docker_manager.sh
 ```
+or just click 2x on the file choose to run the terminal

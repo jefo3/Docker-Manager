@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 function clean_all_containers() {
   docker stop $(docker ps -q)
   docker rm $(docker ps -aq)
